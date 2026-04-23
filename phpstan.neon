@@ -1,0 +1,21 @@
+
+
+parameters:
+    paths:
+        - app/
+        - routes/
+        - database/
+
+    level: 0
+    reportUnmatchedIgnoredErrors: false
+
+    ignoreErrors:
+        - '#Access to an undefined property#'
+        - '#Call to an undefined method#'
+        - '#Call to static method [a-zA-Z0-9_]+\(\) on an unknown class#'
+        - '#Undefined variable#'
+
+    excludePaths:
+        - vendor/*
+        - storage/*
+        - bootstrap/cache/*
